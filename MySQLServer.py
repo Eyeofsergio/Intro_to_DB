@@ -3,6 +3,8 @@ import mysql.connector
 
 from mysql.connector import errorcode
 
+"CREATE DATABASE IF NOT EXISTS alx_book_store"  
+
 def create_database(cursor):
     try: 
         cursor.execute("CREATE DATABASE alx_book_store")
